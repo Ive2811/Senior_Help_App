@@ -8,37 +8,36 @@
 
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/imageView3"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/background_alert"
+        android:background="@drawable/background_alert_error"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_check" />
+        app:srcCompat="@drawable/ic_close" />
 
     <TextView
-        android:id="@+id/txt_Title1"
+        android:id="@+id/txt_Title3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/alata"
-        android:text="¡Inicio de sesión exitoso!"
+        android:text="¡Ha ocurrido un error en la creación de su cuenta. Intente nuevamente!"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
-        android:id="@+id/txt_Text1"
+        android:id="@+id/txt_Text3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -50,14 +49,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Title1" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_Title3" />
 
     <Button
-        android:id="@+id/btn_ok1"
+        android:id="@+id/btn_ok3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="4dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/diseno_button"
         android:stateListAnimator="@null"
@@ -66,7 +65,6 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Text1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_Text3"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-

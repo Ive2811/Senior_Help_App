@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/imageView2"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:layout_marginStart="8dp"
@@ -21,24 +21,24 @@
         app:srcCompat="@drawable/ic_check" />
 
     <TextView
-        android:id="@+id/txt_Title1"
+        android:id="@+id/txt_Title2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/alata"
-        android:text="¡Inicio de sesión exitoso!"
+        android:text="¡Su cuenta ha sido creada exitosamente!"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/txt_Text1"
+        android:id="@+id/txt_Text2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -50,10 +50,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Title1" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_Title2" />
 
     <Button
-        android:id="@+id/btn_ok1"
+        android:id="@+id/btn_ok2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -66,7 +66,7 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Text1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Text2"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

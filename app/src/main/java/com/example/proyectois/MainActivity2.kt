@@ -4,10 +4,8 @@ import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.util.Patterns
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.util.PatternsCompat
 import com.example.proyectois.databinding.ActivityMain2Binding
@@ -20,8 +18,8 @@ class MainActivity2 : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityMain2Binding
-    private lateinit var dialog: Dialog
-    private lateinit var dialog1: Dialog
+    private lateinit var dialog2: Dialog
+    private lateinit var dialog3: Dialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,10 +29,10 @@ class MainActivity2 : AppCompatActivity() {
 
         binding.txtSiRegistro.setOnClickListener {
             startActivity(Intent(this,MainActivity::class.java))
+            finish()
         }
 
         binding.btnSiSignin.setOnClickListener{
-
             validate()
 
             val Email = binding.edtSiCorreo1.text.toString()
@@ -46,10 +44,10 @@ class MainActivity2 : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                  success()
-                    reaload()
+                    success()
+
                 } else {
-                   error()
+                    error()
                 }
             }
          }
@@ -65,7 +63,6 @@ class MainActivity2 : AppCompatActivity() {
             "^" +
                     "(?=.*[0-9])" +
                     "(?=.*[a-z])" +
-                    "(?=.*[@#$%^&+=])" +
                     "(?=\\S+$)" +
                     ".{6,}" +
                     "$")
@@ -130,50 +127,48 @@ class MainActivity2 : AppCompatActivity() {
         if (false in result){
             return
         }
-        Toast.makeText(this,"Éxito", Toast.LENGTH_SHORT).show()
+        error()
     }
 
     private fun success(){
-        dialog = Dialog(this)
-        dialog.setContentView(R.layout.dialog_view)
-        dialog.window!!.setBackgroundDrawable(getDrawable(R.drawable.background_alert))
-        dialog.window!!.setLayout(
+        dialog2 = Dialog(this)
+        dialog2.setContentView(R.layout.dialog_view_register)
+        dialog2.window!!.setBackgroundDrawable(getDrawable(R.drawable.background_alert))
+        dialog2.window!!.setLayout(
             ViewGroup.LayoutParams.MATCH_PARENT,
             ViewGroup.LayoutParams.WRAP_CONTENT
         )
-        dialog.setCancelable(false)
-        dialog.window!!.attributes.windowAnimations = R.style.DialogAnimation
+        dialog2.setCancelable(false)
+        dialog2.window!!.attributes.windowAnimations = R.style.DialogAnimation
 
-        val okay = dialog.findViewById<Button>(R.id.btn_ok1)
+        val okay2 = dialog2.findViewById<Button>(R.id.btn_ok2)
 
-        okay.setOnClickListener {
+        okay2.setOnClickListener {
             reaload()
-            dialog.dismiss()
+            dialog2.dismiss()
         }
-
         binding.btnSiSignin.setOnClickListener {
-            dialog.show()
+            dialog2.show()
         }
     }
 
     private fun error(){
-        dialog1 = Dialog(this)
-        dialog1.setContentView(R.layout.dialog_view_error)
-        dialog1.window!!.setBackgroundDrawable(getDrawable(R.drawable.background_alert_error))
-        dialog1.window!!.setLayout(
+        dialog3 = Dialog(this)
+        dialog3.setContentView(com.example.proyectois.R.layout.dialog_view_error_register)
+        dialog3.window!!.setBackgroundDrawable(getDrawable(R.drawable.background_alert_error))
+        dialog3.window!!.setLayout(
             ViewGroup.LayoutParams.MATCH_PARENT,
             ViewGroup.LayoutParams.WRAP_CONTENT)
-        dialog1.setCancelable(false)
-        dialog1.window!!.attributes.windowAnimations = R.style.DialogAnimation
+        dialog3.setCancelable(false)
+        dialog3.window!!.attributes.windowAnimations = R.style.DialogAnimation
 
-        val okay1 = dialog1.findViewById<Button>(R.id.btn_ok)
+        val okay3 = dialog3.findViewById<Button>(R.id.btn_ok3)
 
-        okay1.setOnClickListener {
-            dialog1.dismiss()
+        okay3.setOnClickListener {
+            dialog3.dismiss()
         }
-
         binding.btnSiSignin.setOnClickListener {
-            dialog1.show()
+            dialog3.show()
         }
     }
 }
