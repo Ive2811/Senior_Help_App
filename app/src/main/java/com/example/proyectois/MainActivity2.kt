@@ -6,9 +6,16 @@ import android.os.Bundle
 import android.util.Log
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.util.PatternsCompat
 import com.example.proyectois.databinding.ActivityMain2Binding
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.api.ApiException
+import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -16,6 +23,8 @@ import java.util.regex.Pattern
 
 class MainActivity2 : AppCompatActivity() {
 
+    val RC_SIGN_IN = 123
+    lateinit var mGoogleSignInClient: GoogleSignInClient
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityMain2Binding
     private lateinit var dialog2: Dialog
@@ -26,6 +35,18 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
         auth= Firebase.auth
+
+
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestEmail()
+            .build()
+
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+
+        binding.btnSiGoogle.setOnClickListener{
+            val signInIntent = mGoogleSignInClient.signInIntent
+            startActivityForResult(signInIntent, RC_SIGN_IN)
+        }
 
         binding.txtSiRegistro.setOnClickListener {
             startActivity(Intent(this,MainActivity::class.java))
@@ -127,7 +148,7 @@ class MainActivity2 : AppCompatActivity() {
         if (false in result){
             return
         }
-        error()
+        Toast.makeText(this,"¡Campos validados correctamente!", Toast.LENGTH_SHORT).show()
     }
 
     private fun success(){
@@ -169,6 +190,40 @@ class MainActivity2 : AppCompatActivity() {
         }
         binding.btnSiSignin.setOnClickListener {
             dialog3.show()
+        }
+    }
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
+        if (requestCode == RC_SIGN_IN) {
+            // The Task returned from this call is always completed, no need to attach
+            // a listener.
+            val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
+            handleSignInResult(task)
+        }
+    }
+
+    private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
+        try {
+            val account: GoogleSignInAccount = completedTask.getResult(ApiException::class.java)
+
+            // Signed in successfully, show authenticated UI.
+            updateUI(account)
+        } catch (e: ApiException) {
+            // The ApiException status code indicates the detailed failure reason.
+            // Please refer to the GoogleSignInStatusCodes class reference for more information.
+            //Log.w(TAG, "signInResult:failed code=" + e.statusCode)
+            updateUI( null)
+        }
+    }
+
+    private fun updateUI(account: GoogleSignInAccount?) {
+        if(account!= null){
+            val intent = Intent(this, MainActivity3::class.java)
+            intent.putExtra("name", account.displayName )
+            intent.putExtra("email", account.email)
+            startActivity(intent)
         }
     }
 }
