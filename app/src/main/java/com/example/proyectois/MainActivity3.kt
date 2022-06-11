@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.proyectois.databinding.ActivityMain2Binding
 import com.example.proyectois.databinding.ActivityMain3Binding
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class MainActivity3 : AppCompatActivity() {
 
@@ -22,12 +24,10 @@ class MainActivity3 : AppCompatActivity() {
     }
 
     private fun logOut() {
-        val sp = getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
-        with(sp.edit()){
-          putString("active", "false")
-            apply()
-        }
-        startActivity(Intent(this,MainActivity::class.java))
+        Firebase.auth.signOut()
+
+        val intent = Intent(applicationContext, MainActivity::class.java)
+        startActivity(intent)
         finish()
     }
 }
