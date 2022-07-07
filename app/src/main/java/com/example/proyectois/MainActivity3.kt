@@ -21,6 +21,22 @@ class MainActivity3 : AppCompatActivity() {
         binding.btnPpLogout.setOnClickListener {
             logOut()
         }
+
+        binding.imgbtnPpCap.setOnClickListener {
+            startActivity(Intent(this, CapacitacionActivity::class.java))
+        }
+
+        binding.imgbtnPpRecor.setOnClickListener {
+            startActivity(Intent(this, RecordatoriosActivity::class.java))
+        }
+
+        binding.imgbtnPpPerfil.setOnClickListener {
+            startActivity(Intent(this, PerfilActivity::class.java))
+        }
+
+        binding.imgbtnPpContactos.setOnClickListener {
+            startActivity(Intent(this, ContactosActivity::class.java))
+        }
     }
 
     private fun logOut() {

@@ -4,107 +4,191 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="#FFFFFF"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
     tools:context=".MainActivity3">
 
+
+    <TextView
+        android:id="@+id/txt_pp_cap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/alata"
+        android:text="Capacitación"
+        android:textColor="#3B5463"
+        android:textColorHint="#3B5463"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn_pp_cap"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/txt_pp_recor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/alata"
+        android:text="Recordatorios"
+        android:textColor="#3B5463"
+        android:textColorHint="#3B5463"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtn_pp_recor"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_pp_recor" />
+
+    <TextView
+        android:id="@+id/txt_pp_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/alata"
+        android:text="Perfil"
+        android:textColor="#3B5463"
+        android:textColorHint="#3B5463"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn_pp_perfil"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_pp_perfil" />
+
+    <TextView
+        android:id="@+id/txt_pp_contactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/alata"
+        android:text="Contactos"
+        android:textColor="#3B5463"
+        android:textColorHint="#3B5463"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn_pp_contactos"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_pp_contactos" />
 
     <Button
         android:id="@+id/btn_pp_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/bordes"
         android:text="Cerrar sesión"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928" />
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toEndOf="@+id/txt_pp_perfil"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pp_contactos" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_pp_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/alata"
         android:text="Pantalla Principal"
-        android:textColor="@color/color1"
+        android:textColor="#9C6C4B"
         android:textColorHint="#000000"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="299dp"
-        android:layout_height="134dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        android:layout_width="200dp"
+        android:layout_height="115dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/ic_baseline_home_24"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pp_title"
+        app:srcCompat="@drawable/casa_silueta_negra_sin_puerta"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="42dp"
+        android:id="@+id/imgbtn_pp_cap"
+        android:layout_width="138dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
         android:layout_marginEnd="88dp"
-        android:layout_marginBottom="67dp"
-        android:scaleType="fitStart"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton9"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/buttons"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/txt_pp_cap"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn_pp_recor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/capacitacion"
+        app:srcCompat="@drawable/logros"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="41dp"
-        android:scaleType="fitStart"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        android:id="@+id/imgbtn_pp_recor"
+        android:layout_width="138dp"
+        android:layout_height="119dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/buttons"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn_pp_cap"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_pp_cap"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_pp_cap"
         app:srcCompat="@drawable/recordatorio"
         tools:ignore="MissingConstraints" />
 
+
     <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="87dp"
-        android:scaleType="fitStart"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton9"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton9"
+        android:id="@+id/imgbtn_pp_perfil"
+        android:layout_width="138dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="191dp"
+        android:background="@drawable/buttons"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn_pp_contactos"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButton9"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/perfiles"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_pp_cap"
+        app:srcCompat="@drawable/grupo_de_usuario"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="183dp"
-        android:scaleType="fitStart"
+        android:id="@+id/imgbtn_pp_contactos"
+        android:layout_width="138dp"
+        android:layout_height="119dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/buttons"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn_pp_perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_pp_perfil"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_pp_perfil"
+        app:srcCompat="@drawable/contactos" />
+
+    <TextView
+        android:id="@+id/txt_pp_footer"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:background="#E59E6D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:srcCompat="@drawable/contacto"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pp_logout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txt_pp_header"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="672dp"
+        android:background="#E59E6D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_pp_title" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
