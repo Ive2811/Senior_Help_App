@@ -8,24 +8,19 @@
 
     <TextView
         android:id="@+id/txt_cap_footer"
-        android:layout_width="411dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="18dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#E59E6D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_cap_title"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_pp_mislogros" />
 
     <TextView
         android:id="@+id/txt_cap_title"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTintMode="add"
         android:fontFamily="@font/alata"
         android:gravity="center"
@@ -34,20 +29,173 @@
         android:textColor="#9C6C4B"
         android:textColorHint="#9C6C4B"
         android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagenPasos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_cap_header" />
 
     <TextView
         android:id="@+id/txt_cap_header"
-        android:layout_width="411dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="672dp"
+        android:layout_width="405dp"
+        android:layout_height="56dp"
         android:background="#E59E6D"
+        app:layout_constraintBottom_toTopOf="@+id/txt_cap_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/imgbtn_pp_pasos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/alata"
+        android:text="Primeros Pasos"
+        android:textColor="#3B5463"
+        android:textColorHint="#3B5463"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagenApartados"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn_pp_ayuda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenPasos" />
+
+    <ImageButton
+        android:id="@+id/imagenPasos"
+        android:layout_width="125dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttons"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtn_pp_pasos"
+        app:layout_constraintEnd_toStartOf="@+id/imagenAyuda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cap_title"
+        app:srcCompat="@drawable/objetivo" />
+
+    <ImageButton
+        android:id="@+id/imagenApartados"
+        android:layout_width="125dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="112dp"
+        android:background="@drawable/buttons"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtn_pp_pregunta"
+        app:layout_constraintEnd_toStartOf="@+id/imagenPreguntas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_pp_pasos"
+        app:srcCompat="@drawable/apartados" />
+
+    <TextView
+        android:id="@+id/imgbtn_pp_Apartados"
+        android:layout_width="178dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/alata"
+        android:text="Uso de Apartados"
+        android:textColor="#3B5463"
+        android:textColorHint="#3B5463"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn_pp_pregunta"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn_pp_pregunta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenApartados" />
+
+    <ImageButton
+        android:id="@+id/imagenAyuda"
+        android:layout_width="125dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/buttons"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenPasos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagenPasos"
+        app:layout_constraintTop_toTopOf="@+id/imagenPasos"
+        app:srcCompat="@drawable/ayuda" />
+
+    <TextView
+        android:id="@+id/imgbtn_pp_ayuda"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/alata"
+        android:text="Consejos y Ayuda"
+        android:textColor="#3B5463"
+        android:textColorHint="#3B5463"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn_pp_pasos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_pp_pasos"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_pp_pasos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imagenPreguntas"
+        android:layout_width="125dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/buttons"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtn_pp_pregunta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagenApartados"
+        app:layout_constraintTop_toTopOf="@+id/imagenApartados"
+        app:srcCompat="@drawable/preguntas" />
+
+    <TextView
+        android:id="@+id/imgbtn_pp_pregunta"
+        android:layout_width="125dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="54dp"
+        android:fontFamily="@font/alata"
+        android:text="Preguntas Frecuentes"
+        android:textColor="#3B5463"
+        android:textColorHint="#3B5463"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/logros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_pp_Apartados"
+        app:layout_constraintTop_toBottomOf="@+id/imagenApartados"
+        tools:ignore="UnknownId" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_pp_logro"
+        android:layout_width="125dp"
+        android:layout_height="106dp"
+        android:background="@drawable/buttons"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtn_pp_mislogros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_pp_pregunta"
+        app:srcCompat="@drawable/mislogros" />
+
+    <TextView
+        android:id="@+id/imgbtn_pp_mislogros"
+        android:layout_width="112dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/alata"
+        android:text="Mis Logros"
+        android:textColor="#3B5463"
+        android:textColorHint="#3B5463"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/txt_cap_title" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_pp"
+        tools:ignore="UnknownId" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

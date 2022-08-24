@@ -11,6 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoIS">
         <activity
+            android:name=".MisLogros"
+            android:exported="false" />
+        <activity
+            android:name=".Preguntas"
+            android:exported="false" />
+        <activity
+            android:name=".Apartados"
+            android:exported="false" />
+        <activity
+            android:name=".Ayuda"
+            android:exported="false" />
+        <activity
+            android:name=".ConsejosAyuda"
+            android:exported="false" />
+        <activity
+            android:name=".PrimerosPasos"
+            android:exported="false" />
+        <activity
             android:name=".ContactosActivity"
             android:exported="false" />
         <activity

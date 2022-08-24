@@ -30,9 +30,7 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(Intent(this, RecordatoriosActivity::class.java))
         }
 
-        binding.imgbtnPpPerfil.setOnClickListener {
-            startActivity(Intent(this, PerfilActivity::class.java))
-        }
+
 
         binding.imgbtnPpContactos.setOnClickListener {
             startActivity(Intent(this, ContactosActivity::class.java))
