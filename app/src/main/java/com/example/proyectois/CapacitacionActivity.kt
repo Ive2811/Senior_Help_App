@@ -16,21 +16,25 @@ class CapacitacionActivity : AppCompatActivity() {
         binding = ActivityCapacitacionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.imagenPasos.setOnClickListener {
+        binding.imgbtnCapPasos.setOnClickListener {
             startActivity(Intent(this, PrimerosPasos::class.java))
         }
-        binding.imagenAyuda.setOnClickListener {
+        binding.imgbtnCapConsejos.setOnClickListener {
             startActivity(Intent(this,Ayuda::class.java))
         }
-        binding.imagenApartados.setOnClickListener {
+        binding.imgbtnCapApartados.setOnClickListener {
             startActivity(Intent(this,Apartados::class.java))
         }
-        binding.imagenPreguntas.setOnClickListener {
+        binding.imgbtnCapPreguntas.setOnClickListener {
             startActivity(Intent(this,Preguntas::class.java))
         }
 
-        binding.imgbtnPpLogro.setOnClickListener {
+        binding.imgbtnCapLogros.setOnClickListener {
             startActivity(Intent(this,MisLogros::class.java))
+        }
+
+        binding.imgbtnCapAtras.setOnClickListener {
+            startActivity(Intent(this,MainActivity3::class.java))
         }
     }
 

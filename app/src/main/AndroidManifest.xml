@@ -23,18 +23,11 @@
             android:name=".Ayuda"
             android:exported="false" />
         <activity
-            android:name=".ConsejosAyuda"
-            android:exported="false" />
-        <activity
             android:name=".PrimerosPasos"
             android:exported="false" />
         <activity
             android:name=".ContactosActivity"
             android:exported="false" />
-        <activity
-            android:name=".PerfilActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".RecordatoriosActivity"
             android:exported="false" />

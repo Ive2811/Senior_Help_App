@@ -3,9 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/drawable/anima_boton.xml" value="0.248" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/drawable/buttons.xml" value="0.248" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/drawable/diseno_button.xml" value="0.248" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/drawable/favoritos.xml" value="0.248" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_apartados.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_capacitacion.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_main3.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_mis_logros.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_perfil.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_recordatorios.xml" value="0.25" />
         <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_reset_password.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/animacion_boton.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/usuario/Downloads/ProyectoIS/ProyectoIS/app/src/main/res/drawable/background_alert.xml" value="0.2265" />
         <entry key="..\:/Users/usuario/Downloads/ProyectoIS/ProyectoIS/app/src/main/res/layout/activity_main.xml" value="0.2259963768115942" />
         <entry key="..\:/Users/usuario/Downloads/ProyectoIS/ProyectoIS/app/src/main/res/layout/activity_main2.xml" value="0.2259963768115942" />
