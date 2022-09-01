@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Apartados">
+
+    <TextView
+        android:id="@+id/txt_pp_footer"
+        android:layout_width="419dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="39dp"
+        android:background="#E59E6D"
+        app:layout_constraintBottom_toTopOf="@+id/txt_ml_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_ml_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="93dp"
+        android:fontFamily="@font/alata"
+        android:isScrollContainer="false"
+        android:text="Uso de Apartados "
+        android:textAlignment="center"
+        android:textColor="#9C6C4B"
+        android:textColorHint="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_recordatorio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pp_footer" />
+
+    <Button
+        android:id="@+id/btn_recordatorio"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bordes"
+        android:backgroundTint="@color/color1"
+        android:fontFamily="@font/alata"
+        android:text="presione aqui para ver el video"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_contactos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ml_title" />
+
+    <Button
+        android:id="@+id/btn_contactos"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/bordes"
+        android:backgroundTint="@color/color1"
+        android:fontFamily="@font/alata"
+        android:text="presione aqui para ver el video"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_recordatorio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
