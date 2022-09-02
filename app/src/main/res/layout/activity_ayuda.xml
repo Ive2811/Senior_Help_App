@@ -39,7 +39,7 @@
     <ImageButton
         android:id="@+id/imgbtn_ayu_atras"
         android:layout_width="80dp"
-        android:layout_height="0dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="611dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"

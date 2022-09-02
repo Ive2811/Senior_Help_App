@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/txt_pre_footer"
-        android:layout_width="418dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginBottom="29dp"
         android:background="#E59E6D"
@@ -147,7 +147,7 @@
 
     <TextView
         android:id="@+id/txt_pre_header"
-        android:layout_width="415dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#E59E6D"
         app:layout_constraintBottom_toBottomOf="parent"

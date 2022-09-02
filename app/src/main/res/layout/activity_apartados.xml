@@ -13,6 +13,7 @@
         android:background="#E59E6D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgbtn_aa_atras" />
 
@@ -53,7 +54,6 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_aa_apartado1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_aa_header" />
 

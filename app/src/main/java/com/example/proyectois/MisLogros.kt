@@ -1,16 +1,13 @@
 package com.example.proyectois
 
-import android.content.Context
 import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.animation.AnimationUtils
-import com.example.proyectois.databinding.ActivityCapacitacionBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.example.proyectois.databinding.ActivityMisLogrosBinding
 import nl.dionsegijn.konfetti.models.Shape
 import nl.dionsegijn.konfetti.models.Size
-import kotlin.math.max
+
 
 private lateinit var binding: ActivityMisLogrosBinding
 
