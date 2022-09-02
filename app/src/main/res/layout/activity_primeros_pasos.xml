@@ -5,25 +5,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PrimerosPasos">
+
     <TextView
-        android:id="@+id/txt_ml_title"
+        android:id="@+id/txt_prp_footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#E59E6D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_prp_inicio" />
+
+    <TextView
+        android:id="@+id/txt_prp_header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:background="#E59E6D"
+        app:layout_constraintBottom_toTopOf="@+id/txt_prp_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_prp_atras"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="94dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/video_prp_inicio"
+        app:layout_constraintEnd_toStartOf="@+id/txt_prp_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/txt_prp_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="618dp"
         android:fontFamily="@font/alata"
-        android:layout_marginTop="50dp"
         android:isScrollContainer="false"
         android:text="Primeros Pasos "
         android:textAlignment="center"
         android:textColor="#9C6C4B"
         android:textColorHint="#000000"
-        android:textSize="30sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01999998" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_prp_header" />
 
-
+    <VideoView
+        android:id="@+id/video_prp_inicio"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_prp_footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_prp_atras" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

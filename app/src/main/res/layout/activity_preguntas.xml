@@ -5,22 +5,155 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Preguntas">
+
+
     <TextView
-        android:id="@+id/txt_ml_title"
+        android:id="@+id/txt_pre_footer"
+        android:layout_width="418dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="29dp"
+        android:background="#E59E6D"
+        app:layout_constraintBottom_toTopOf="@+id/txt_pre_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_pre_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/alata"
-        android:layout_marginTop="50dp"
         android:isScrollContainer="false"
         android:text="Preguntas Frecuentes "
         android:textAlignment="center"
         android:textColor="#9C6C4B"
         android:textColorHint="#000000"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_pregunta1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pre_header" />
+
+    <TextView
+        android:id="@+id/txt_pregunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/alata"
+        android:isScrollContainer="false"
+        android:text="¿Qué es Senior Help App?"
+        android:textAlignment="center"
+        android:textColor="#9C6C4B"
+        android:textColorHint="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_respuesta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pre_title" />
+
+    <TextView
+        android:id="@+id/txt_pregunta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/alata"
+        android:isScrollContainer="false"
+        android:text="¿Cuál es el objetivo?"
+        android:textAlignment="center"
+        android:textColor="#9C6C4B"
+        android:textColorHint="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_respuesta2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_respuesta" />
+
+    <TextView
+        android:id="@+id/txt_pregunta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/alata"
+        android:isScrollContainer="false"
+        android:text="¿Para quién está dirigida?"
+        android:textAlignment="center"
+        android:textColor="#9C6C4B"
+        android:textColorHint="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_respuesta3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_respuesta2" />
+
+    <TextView
+        android:id="@+id/txt_respuesta"
+        android:layout_width="352dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="17dp"
+        android:fontFamily="@font/alata"
+        android:isScrollContainer="false"
+        android:text="Es una aplicación con la cual se busca instruir a personas adultas para el uso de celulares, y que puedan interactuar de una forma más fácil los nuevos dispositivos."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_pregunta2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pregunta1" />
+
+    <TextView
+        android:id="@+id/txt_respuesta2"
+        android:layout_width="355dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/alata"
+        android:isScrollContainer="false"
+        android:text="Que los adultos mayores tengan la oportunidad de poder utilizar un dispositivo inteligente, con el fin de que puedan tener un mayor control de sus actividades utilizando esa aplicación. "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_pregunta3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pregunta2" />
+
+    <TextView
+        android:id="@+id/txt_respuesta3"
+        android:layout_width="357dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="39dp"
+        android:fontFamily="@font/alata"
+        android:isScrollContainer="false"
+        android:text="Para adultos mayores los cuales se les dificulta el poder usar un dispositivo móvil o que no tienen conocimiento alguno de estos."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_pre_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pregunta3" />
+
+    <TextView
+        android:id="@+id/txt_pre_header"
+        android:layout_width="415dp"
+        android:layout_height="60dp"
+        android:background="#E59E6D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01999998" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_respuesta3" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
