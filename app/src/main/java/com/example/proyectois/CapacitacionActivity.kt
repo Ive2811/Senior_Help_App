@@ -3,10 +3,12 @@ package com.example.proyectois
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.proyectois.databinding.ActivityMain3Binding
 import com.example.proyectois.databinding.ActivityCapacitacionBinding
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import android.widget.Button
+import android.media.MediaPlayer
+import com.example.proyectois.databinding.ActivityMain2Binding.inflate
 
 private lateinit var binding: ActivityCapacitacionBinding
 
@@ -33,10 +35,19 @@ class CapacitacionActivity : AppCompatActivity() {
             startActivity(Intent(this,MisLogros::class.java))
         }
 
-        binding.imgbtnCapAtras.setOnClickListener {
-            startActivity(Intent(this,MainActivity3::class.java))
+        val btn1 = findViewById<Button>(R.id.btn_capacitacion)
+
+        btn1.setOnClickListener {
+            val mp = MediaPlayer.create(this, R.raw.capacitacion)
+            mp.start()
         }
+        binding.imgbtnCapHome.setOnClickListener {
+            startActivity(Intent(this, MainActivity3::class.java))
+        }
+
+
     }
+
 
 
 

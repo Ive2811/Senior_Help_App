@@ -2,8 +2,10 @@ package com.example.proyectois
 
 import android.content.Context
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import com.example.proyectois.databinding.ActivityMain2Binding
 import com.example.proyectois.databinding.ActivityMain3Binding
 import com.google.firebase.auth.ktx.auth
@@ -34,6 +36,12 @@ class MainActivity3 : AppCompatActivity() {
 
         binding.imgbtnPpContactos.setOnClickListener {
             startActivity(Intent(this, ContactosActivity::class.java))
+        }
+        val btn1 = findViewById<Button>(R.id.btn_princpal)
+
+        btn1.setOnClickListener {
+            val mp = MediaPlayer.create(this, R.raw.principal)
+            mp.start()
         }
     }
 

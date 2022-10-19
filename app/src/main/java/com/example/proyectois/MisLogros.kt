@@ -1,8 +1,11 @@
 package com.example.proyectois
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
+import android.media.MediaPlayer
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyectois.databinding.ActivityMisLogrosBinding
 import nl.dionsegijn.konfetti.models.Shape
@@ -13,14 +16,27 @@ private lateinit var binding: ActivityMisLogrosBinding
 
 class MisLogros : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMisLogrosBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.imgbtnMlAtras.setOnClickListener {
-            startActivity(Intent(this, CapacitacionActivity::class.java))
+        val btn1 = findViewById<Button>(R.id.imgbtn_ml_escuchar1)
+        val btn2 = findViewById<Button>(R.id.imgbtn_ml_escuchar2)
+
+        btn1.setOnClickListener {
+            val mp = MediaPlayer.create(this, R.raw.logro1)
+            mp.start()
         }
+        btn2.setOnClickListener {
+            val mp = MediaPlayer.create(this, R.raw.logro2)
+            mp.start()
+        }
+        binding.btnHome.setOnClickListener {
+            startActivity(Intent(this, MainActivity3::class.java))
+        }
+
 
         binding.imgbtnMlLogro1.setOnClickListener {
             binding.viewKonfetti.build()

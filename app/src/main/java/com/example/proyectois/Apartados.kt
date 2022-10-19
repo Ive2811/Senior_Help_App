@@ -14,7 +14,7 @@ class Apartados : AppCompatActivity() {
         binding = ActivityApartadosBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.imgbtnAaAtras.setOnClickListener {
+        binding.imgbtnAaHome.setOnClickListener {
             startActivity(Intent(this, CapacitacionActivity::class.java))
         }
     }

@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoIS">
         <activity
+            android:name=".ContactoForm"
+            android:exported="false" />
+        <activity
+            android:name=".ContactoAdapter"
+            android:exported="false" />
+        <activity
             android:name=".MisLogros"
             android:exported="false" />
         <activity

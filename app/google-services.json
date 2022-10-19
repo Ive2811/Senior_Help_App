@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "558434712800",
+    "firebase_url": "https://proyectois-c4b58-default-rtdb.firebaseio.com",
     "project_id": "proyectois-c4b58",
     "storage_bucket": "proyectois-c4b58.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "558434712800-cd8fufkvgvc3p5sa6810mc1to8tnt7ge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proyectois",
+            "certificate_hash": "2882baa0c2bdf5280d08fb566ee189cab17530b9"
+          }
+        },
         {
           "client_id": "558434712800-e008t60j5klvm9clebv920grifes60tp.apps.googleusercontent.com",
           "client_type": 3

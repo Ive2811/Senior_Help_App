@@ -22,10 +22,6 @@ class PrimerosPasos : AppCompatActivity() {
         binding = ActivityPrimerosPasosBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.imgbtnPrpAtras.setOnClickListener {
-            startActivity(Intent(this, CapacitacionActivity::class.java))
-        }
-        setContentView(R.layout.activity_primeros_pasos)
 
 
         inicio = findViewById(R.id.video_prp_inicio)
@@ -47,6 +43,9 @@ class PrimerosPasos : AppCompatActivity() {
                 mMediaplayer.start()
             }
         }
+        binding.imgbtnPrpHome.setOnClickListener {
+            startActivity(Intent(this, MainActivity3::class.java))
+        }
     }
 
     override fun onPause() {
@@ -67,4 +66,6 @@ class PrimerosPasos : AppCompatActivity() {
 
         mMediaplayer.release()
     }
+
+
 }
