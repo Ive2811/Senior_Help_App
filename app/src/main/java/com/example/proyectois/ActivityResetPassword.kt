@@ -15,10 +15,6 @@ class ActivityResetPassword : AppCompatActivity() {
         binding = ActivityResetPasswordBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.imgbtnRpHome.setOnClickListener {
-            startActivity(Intent(this, MainActivity3::class.java))
-        }
-
         binding.btnRpBack.setOnClickListener{
             startActivity(Intent(this,MainActivity::class.java))
             finish()

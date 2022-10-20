@@ -5,6 +5,7 @@ import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.proyectois.databinding.ActivityCapacitacionBinding
 import com.example.proyectois.databinding.ActivityMisLogrosBinding
 import com.example.proyectois.databinding.ActivityPreguntasBinding
 import com.example.proyectois.databinding.ActivityPrimerosPasosBinding
@@ -13,7 +14,8 @@ private lateinit var binding: ActivityPreguntasBinding
 class Preguntas : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_preguntas)
+        binding = ActivityPreguntasBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val btn1 = findViewById<Button>(R.id.btn_respuesta1)
         val btn2 = findViewById<Button>(R.id.btn_respuesta2)
