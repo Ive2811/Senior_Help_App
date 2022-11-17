@@ -69,6 +69,9 @@ class MainActivity : AppCompatActivity() {
         binding.txtInRegistro.setOnClickListener {
             startActivity(Intent(this, MainActivity2::class.java))
         }
+        binding.btnInNocreden.setOnClickListener {
+            startActivity(Intent(this, MainActivity3::class.java))
+        }
         binding.txtInOlvid.setOnClickListener {
             startActivity(Intent(this, ActivityResetPassword::class.java))
         }

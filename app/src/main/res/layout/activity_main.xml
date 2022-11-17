@@ -29,12 +29,35 @@
                 android:textColorHint="#9C6C4B"
                 android:textSize="34sp" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_in_nocreden"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bordes"
+                    android:backgroundTint="@color/color1"
+                    android:fontFamily="@font/alata"
+                    android:text="INGRESAR SIN REGISTRARSE"
+                    app:icon="@drawable/login"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edt_in_correo"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="10dp"
                 android:hint="   Correo electrónico"
                 android:orientation="vertical"
                 app:endIconMode="clear_text"
@@ -77,7 +100,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -103,17 +126,18 @@
                     android:textSize="18sp" />
             </LinearLayout>
 
+
             <Button
                 android:id="@+id/btn_in_login"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/bordes"
                 android:backgroundTint="@color/color1"
                 android:fontFamily="@font/alata"
                 android:text="INICIAR SESIÓN"
-                app:icon="@drawable/ic_ingresar"
+                app:icon="@drawable/login"
                 android:textColor="#000000"
                 android:textSize="14sp" />
 
@@ -121,7 +145,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 

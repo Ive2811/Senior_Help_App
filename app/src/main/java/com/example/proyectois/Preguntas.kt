@@ -5,10 +5,7 @@ import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.proyectois.databinding.ActivityCapacitacionBinding
-import com.example.proyectois.databinding.ActivityMisLogrosBinding
 import com.example.proyectois.databinding.ActivityPreguntasBinding
-import com.example.proyectois.databinding.ActivityPrimerosPasosBinding
 private lateinit var binding: ActivityPreguntasBinding
 
 class Preguntas : AppCompatActivity() {

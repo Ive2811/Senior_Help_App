@@ -28,10 +28,6 @@ class CapacitacionActivity : AppCompatActivity() {
             startActivity(Intent(this,Preguntas::class.java))
         }
 
-        binding.imgbtnCapLogros.setOnClickListener {
-            startActivity(Intent(this,MisLogros::class.java))
-        }
-
         binding.imgbtnCapHome.setOnClickListener {
             startActivity(Intent(this, MainActivity3::class.java))
         }

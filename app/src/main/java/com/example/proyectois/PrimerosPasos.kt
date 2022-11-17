@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.VideoView
 import android.media.MediaPlayer
 import android.net.Uri
-import com.example.proyectois.databinding.ActivityMisLogrosBinding
 import com.example.proyectois.databinding.ActivityPrimerosPasosBinding
 
 private lateinit var binding: ActivityPrimerosPasosBinding

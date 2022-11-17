@@ -165,26 +165,6 @@
                     android:textColor="#3B5463"
                     android:textSize="22sp" />
             </LinearLayout>
-
-            <ImageButton
-                android:id="@+id/imgbtn_cap_logros"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_marginTop="40dp"
-                android:background="@drawable/buttons"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/mislogros" />
-
-            <TextView
-                android:id="@+id/txt_cap_logros"
-                android:layout_width="137dp"
-                android:layout_height="46dp"
-                android:layout_marginBottom="60dp"
-                android:fontFamily="@font/alata"
-                android:text="Mis logros"
-                android:textAlignment="center"
-                android:textColor="#3B5463"
-                android:textSize="22sp" />
         </LinearLayout>
     </ScrollView>
 </layout>
