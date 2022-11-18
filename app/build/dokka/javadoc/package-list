@@ -1,0 +1,10 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.example.proyectois.service/ContactoClient.Contacto///PointingToDeclaration/com/example/proyectois/service/ContactoClient.Contacto.html
+$dokka.location:com.example.proyectois/ContactoAdapter.PACL///PointingToDeclaration/com/example/proyectois/ContactoAdapter.PACL.html
+$dokka.location:com.example.proyectois/ContactoAdapter.PAVH///PointingToDeclaration/com/example/proyectois/ContactoAdapter.PAVH.html
+$dokka.location:com.example.proyectois/ContactosActivity.Companion///PointingToDeclaration/com/example/proyectois/ContactosActivity.Companion.html
+$dokka.location:com.example.proyectois/MainActivity.Companion///PointingToDeclaration/com/example/proyectois/MainActivity.Companion.html
+com.example.proyectois
+com.example.proyectois.service
+

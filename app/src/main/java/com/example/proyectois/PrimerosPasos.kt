@@ -27,7 +27,7 @@ class PrimerosPasos : AppCompatActivity() {
         setContentView(binding.root)
 
         /**
-         * Definimos la ruta de ubicación de los videos.
+         * Definimos la ruta de ubicación de los vídeos.
          */
         inicio = findViewById(R.id.video_prp_inicio)
         val uri= Uri.parse("android.resource://"
