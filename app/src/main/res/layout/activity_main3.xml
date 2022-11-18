@@ -29,19 +29,7 @@
         android:textColorHint="#000000"
         android:textSize="34sp" />
 
-            <Button
-                android:id="@+id/btn_princpal"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/bordes"
-                android:fontFamily="@font/alata"
-                android:text="PRESIONE AQUÍ PARA ESCUCHAR"
-                android:textColor="#000000"
-                android:textColorHint="#000000"
-                android:textSize="14sp"
-                app:icon="@drawable/ic_baseline_volume_up_24" />
+
 
     <ImageView
         android:id="@+id/btn_home"
@@ -62,20 +50,12 @@
                 android:id="@+id/imgbtn_pp_cap"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="0dp"
                 android:background="@drawable/buttons"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/logros" />
 
 
-            <ImageButton
-                android:id="@+id/imgbtn_pp_recor"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/buttons"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/recordatorio" />
         </LinearLayout>
 
             <LinearLayout
@@ -89,44 +69,14 @@
                     android:id="@+id/txt_pp_cap"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="5dp"
                     android:fontFamily="@font/alata"
                     android:text="Capacitación"
                     android:textColor="#3B5463"
                     android:textColorHint="#3B5463"
                     android:textSize="22sp" />
-
-                <TextView
-                    android:id="@+id/txt_pp_recor"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:baselineAligned="false"
-                    android:fontFamily="@font/alata"
-                    android:text="Recordatorios"
-                    android:textColor="#3B5463"
-                    android:textColorHint="#3B5463"
-                    android:textSize="22sp" />
             </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/imgbtn_pp_contactos"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:background="@drawable/buttons"
-        android:layout_marginTop="40dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/contactos" />
-
-    <TextView
-        android:id="@+id/txt_pp_contactos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/alata"
-        android:text="Contactos"
-        android:textColor="#3B5463"
-        android:textColorHint="#3B5463"
-        android:textSize="22sp"/>
 
             <Button
                 android:id="@+id/btn_pp_logout"

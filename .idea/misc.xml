@@ -3,31 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/usuario/Documents/App_AdultosMayores/app/src/main/res/layout/activity_apartados.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Documents/App_AdultosMayores/app/src/main/res/layout/activity_capacitacion.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Documents/App_AdultosMayores/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Documents/App_AdultosMayores/app/src/main/res/layout/activity_main2.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Documents/App_AdultosMayores/app/src/main/res/layout/activity_main3.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Documents/App_AdultosMayores/app/src/main/res/layout/activity_mis_logros.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/drawable/bordes.xml" value="0.2555" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_apartados.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_ayuda.xml" value="0.2450229709035222" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_capacitacion.xml" value="0.264" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_contacto_adapter.xml" value="0.264" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_contacto_form.xml" value="0.264" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_contactos.xml" value="0.2" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_main2.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_main3.xml" value="0.264" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_mis_logros.xml" value="0.264" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_preguntas.xml" value="0.21693840579710144" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_primeros_pasos.xml" value="0.21693840579710144" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_recordatorios.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/App_AdultosMayores/app/src/main/res/layout/activity_reset_password.xml" value="0.24439918533604887" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_capacitacion.xml" value="0.1" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_main.xml" value="0.11851851851851852" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_preguntas.xml" value="0.1" />
-        <entry key="..\:/Users/usuario/Downloads/App_AdultosMayores/app/src/main/res/layout/activity_reset_password.xml" value="0.264" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_main3.xml" value="0.25" />
       </map>
     </option>
   </component>
