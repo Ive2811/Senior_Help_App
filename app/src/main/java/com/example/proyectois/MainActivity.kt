@@ -24,12 +24,18 @@ import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
 
+    /**
+     * Declaramos las variables a utilizar.
+     */
     private lateinit var googleSingnInClient: GoogleSignInClient
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityMainBinding
     private lateinit var dialog: Dialog
     private lateinit var dialog1: Dialog
 
+    /**
+     * Función principal.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -43,15 +49,25 @@ class MainActivity : AppCompatActivity() {
 
         googleSingnInClient = GoogleSignIn.getClient(this, gso)
 
+        /**
+         * Al dar click, llamamos a la función de iniciar sesión con Google.
+         */
         binding.btnInGoogle.setOnClickListener {
             signInGoogle()
         }
 
+        /**
+         * Al dar click, validamos el correo y contraseña ingresado.
+         */
         binding.btnInLogin.setOnClickListener {
 
             val Email = binding.edtInCorreo1.text.toString()
             val Password = binding.edtInContra.text.toString()
 
+
+            /**
+             * Si los campos de correo y contraseña están vacíos, se muestra un mensaje.
+             */
             when {
                 Email.isEmpty() || Password.isEmpty() -> {
                     // If sign in fails, display a message to the user.
@@ -60,24 +76,41 @@ class MainActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                 }
+                /**
+                 * Si no, llamamos a la función de iniciar sesión.
+                 */
                 else -> {
                     SignIn(Email, Password)
 
                 }
             }
         }
+        /**
+         * Al dar click, mostramos la pantalla de Registrarse.
+         */
         binding.txtInRegistro.setOnClickListener {
             startActivity(Intent(this, MainActivity2::class.java))
         }
+
+        /**
+         * Al dar click, mostramos la pantalla principal.
+         */
         binding.btnInNocreden.setOnClickListener {
             startActivity(Intent(this, MainActivity3::class.java))
         }
+
+        /**
+         * Al dar click, mostramos la pantalla de Recuperar contraseña.
+         */
         binding.txtInOlvid.setOnClickListener {
             startActivity(Intent(this, ActivityResetPassword::class.java))
         }
     }
 
-    private fun signInGoogle() {
+    /**
+     * Función para iniciar sesión con Google.
+     */
+    fun signInGoogle() {
         val signInIntent = googleSingnInClient.signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
     }
@@ -99,7 +132,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun firebaseAuthWithGoogle(idToken: String){
+    /**
+     * Función para realizar la autenticación con Google.
+     */
+     fun firebaseAuthWithGoogle(idToken: String){
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
@@ -111,11 +147,13 @@ class MainActivity : AppCompatActivity() {
                     Log.w(ContentValues.TAG, "signInWithCredential:failture", task.exception)
                     updateUI(null)
                 }
-
             }
-    }
+       }
 
-    private fun updateUI(user: FirebaseUser?) {
+    /**
+     * Función para mostrar el nombre de las cuentas existentes.
+     */
+    fun updateUI(user: FirebaseUser?) {
         if (user != null) {
             val intent = Intent(applicationContext, MainActivity3::class.java)
             intent.putExtra(
@@ -128,8 +166,10 @@ class MainActivity : AppCompatActivity() {
         const val EXTRA_NAME = "EXTRA NAME"
     }
 
-
-    private fun SignIn (email: String, password : String){
+    /**
+     * Función para iniciar sesión con correo y contraseña.
+     */
+     fun SignIn (email: String, password : String){
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
 
@@ -142,12 +182,19 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-    private fun reaload() {
+    /**
+     * Función para recargar la pantalla.
+     */
+     fun reaload() {
         val intent = Intent( this, MainActivity3::class.java)
         this.startActivity(intent)
         finish()
     }
-    private fun success(){
+
+    /**
+     * Función para mostrar una alerta de éxito al iniciar sesión.
+     */
+     fun success(){
         dialog = Dialog(this)
         dialog.setContentView(R.layout.dialog_view)
         dialog.window!!.setBackgroundDrawable(getDrawable(R.drawable.background_alert))
@@ -164,13 +211,16 @@ class MainActivity : AppCompatActivity() {
             reaload()
             dialog.dismiss()
         }
-
         binding.btnInLogin.setOnClickListener {
             dialog.show()
         }
     }
 
-    private fun error(){
+    /**
+     * Función para mostrar una alerta de error al iniciar sesión.
+     */
+
+     fun error(){
         dialog1 = Dialog(this)
         dialog1.setContentView(R.layout.dialog_view_error)
         dialog1.window!!.setBackgroundDrawable(getDrawable(R.drawable.background_alert_error))
@@ -185,7 +235,6 @@ class MainActivity : AppCompatActivity() {
         okay1.setOnClickListener {
             dialog1.dismiss()
         }
-
         binding.btnInLogin.setOnClickListener {
             dialog1.show()
         }

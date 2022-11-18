@@ -9,7 +9,9 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        /**
+         * Al cargar, mostramos la pantalla de Iniciar sesión.
+         */
         startActivity(Intent(this,MainActivity::class.java))
-
     }
 }

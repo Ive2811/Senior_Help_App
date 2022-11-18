@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.gms.google-services'
+    id 'org.jetbrains.dokka'
 
 }
 
@@ -38,6 +39,20 @@ android {
     }
 
     namespace 'com.example.proyectois'
+}
+
+tasks.withType(dokkaHtml.getClass()).configureEach{
+    pluginsMapConfiguration.set(
+            ["org.jetbrains.dokka.base.DokkaBase": """{ "separateInheritedMembers": true}"""]
+    )
+}
+
+dokkaHtml.configure {
+    dokkaSourceSets {
+        named ("main") {
+            skipDeprecated.set(true)
+        }
+    }
 }
 
 dependencies {

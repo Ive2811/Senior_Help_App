@@ -23,6 +23,9 @@ import java.util.regex.Pattern
 
 class MainActivity2 : AppCompatActivity() {
 
+    /**
+     * Declaramos las variables a utilizar.
+     */
     val RC_SIGN_IN = 123
     lateinit var mGoogleSignInClient: GoogleSignInClient
     private lateinit var auth: FirebaseAuth
@@ -30,6 +33,9 @@ class MainActivity2 : AppCompatActivity() {
     private lateinit var dialog2: Dialog
     private lateinit var dialog3: Dialog
 
+    /**
+     * Función principal.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMain2Binding.inflate(layoutInflater)
@@ -48,11 +54,17 @@ class MainActivity2 : AppCompatActivity() {
             startActivityForResult(signInIntent, RC_SIGN_IN)
         }
 
+        /**
+         * Al dar click, mostramos la pantalla de Iniciar sesión.
+         */
         binding.txtSiRegistro.setOnClickListener {
             startActivity(Intent(this,MainActivity::class.java))
             finish()
         }
 
+        /**
+         * Al dar click, llamamos a la función para validar los campos y se llama a la función para crear la cuenta.
+         */
         binding.btnSiSignin.setOnClickListener{
             validate()
 
@@ -61,7 +73,11 @@ class MainActivity2 : AppCompatActivity() {
             createAccount(Email, Password)
         }
     }
-    private fun createAccount(email : String, password : String){
+
+    /**
+     * Función para crear una cuenta.
+     */
+     fun createAccount(email : String, password : String){
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -72,12 +88,19 @@ class MainActivity2 : AppCompatActivity() {
                 }
             }
          }
-    private fun reaload() {
+
+    /**
+     * Función para recargar la pantalla.
+     */
+    fun reaload() {
         val intent = Intent( this, MainActivity::class.java)
         this.startActivity(intent)
     }
 
-    private fun validatePassword() : Boolean{
+    /**
+     * Función para validar la contraseña.
+     */
+    fun validatePassword() : Boolean{
         val password = binding.edtSiContra.editText?.text.toString()
         val confirmpassword = binding.edtSiRepeat.editText?.text.toString()
         val passwordRegex = Pattern.compile(
@@ -102,7 +125,10 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
-    private fun confirmPassword() : Boolean{
+    /**
+     * Función para confirmar la contraseña.
+     */
+    fun confirmPassword() : Boolean{
         val password = binding.edtSiContra.editText?.text.toString()
         val confirmpassword = binding.edtSiRepeat.editText?.text.toString()
 
@@ -118,7 +144,10 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
-    private fun validateEmail() : Boolean {
+    /**
+     * Función para validar el correo electrónico.
+     */
+    fun validateEmail() : Boolean {
         val email = binding.edtSiCorreo.editText?.text.toString()
         return if (email.isEmpty()){
             binding.edtSiCorreo.error = "El campo no puede quedar vacío."
@@ -131,7 +160,11 @@ class MainActivity2 : AppCompatActivity() {
             true
         }
     }
-    private fun validateName() : Boolean {
+
+    /**
+     * Función para validar el nombre.
+     */
+    fun validateName() : Boolean {
         val name = binding.edtSiNombre.editText?.text.toString()
         return if (name.isEmpty()){
             binding.edtSiNombre.error = "El campo no puede quedar vacío."
@@ -142,8 +175,10 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
-    private fun validate(){
-
+    /**
+     * Función para validar todos los campos.
+     */
+    fun validate(){
         val result = arrayOf(validateEmail(), validatePassword(), validateName(), confirmPassword())
         if (false in result){
             return
@@ -151,7 +186,11 @@ class MainActivity2 : AppCompatActivity() {
         Toast.makeText(this,"¡Campos validados correctamente!", Toast.LENGTH_SHORT).show()
     }
 
-    private fun success(){
+
+    /**
+     * Función para mostrar una alerta de éxito al registrarse.
+     */
+    fun success(){
         dialog2 = Dialog(this)
         dialog2.setContentView(R.layout.dialog_view_register)
         dialog2.window!!.setBackgroundDrawable(getDrawable(R.drawable.background_alert))
@@ -173,7 +212,10 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
-    private fun error(){
+    /**
+     * Función para mostrar una alerta de error al registrarse.
+     */
+    fun error(){
         dialog3 = Dialog(this)
         dialog3.setContentView(com.example.proyectois.R.layout.dialog_view_error_register)
         dialog3.window!!.setBackgroundDrawable(getDrawable(R.drawable.background_alert_error))
@@ -204,7 +246,10 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
-    private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
+    /**
+     * Función para manejo de errores.
+     */
+     fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
         try {
             val account: GoogleSignInAccount = completedTask.getResult(ApiException::class.java)
 
@@ -218,7 +263,10 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
-    private fun updateUI(account: GoogleSignInAccount?) {
+    /**
+     * Función para mostrar el nombre y correo de las cuentas existentes.
+     */
+    fun updateUI(account: GoogleSignInAccount?) {
         if(account!= null){
             val intent = Intent(this, MainActivity3::class.java)
             intent.putExtra("name", account.displayName )
