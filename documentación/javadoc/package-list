@@ -1,0 +1,5 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.example.proyectois/MainActivity.Companion///PointingToDeclaration/com/example/proyectois/MainActivity.Companion.html
+com.example.proyectois
+

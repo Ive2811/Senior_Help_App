@@ -1,0 +1,50 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.example.proyectois////PointingToDeclaration/app/com.example.proyectois/index.md
+$dokka.location:com.example.proyectois/ActivityResetPassword///PointingToDeclaration/app/com.example.proyectois/-activity-reset-password/index.md
+$dokka.location:com.example.proyectois/ActivityResetPassword/ActivityResetPassword/#/PointingToDeclaration/app/com.example.proyectois/-activity-reset-password/-activity-reset-password.md
+$dokka.location:com.example.proyectois/ActivityResetPassword/sendEmail/#/PointingToDeclaration/app/com.example.proyectois/-activity-reset-password/send-email.md
+$dokka.location:com.example.proyectois/Apartados///PointingToDeclaration/app/com.example.proyectois/-apartados/index.md
+$dokka.location:com.example.proyectois/Apartados/Apartados/#/PointingToDeclaration/app/com.example.proyectois/-apartados/-apartados.md
+$dokka.location:com.example.proyectois/Ayuda///PointingToDeclaration/app/com.example.proyectois/-ayuda/index.md
+$dokka.location:com.example.proyectois/Ayuda/Ayuda/#/PointingToDeclaration/app/com.example.proyectois/-ayuda/-ayuda.md
+$dokka.location:com.example.proyectois/CapacitacionActivity///PointingToDeclaration/app/com.example.proyectois/-capacitacion-activity/index.md
+$dokka.location:com.example.proyectois/CapacitacionActivity/CapacitacionActivity/#/PointingToDeclaration/app/com.example.proyectois/-capacitacion-activity/-capacitacion-activity.md
+$dokka.location:com.example.proyectois/MainActivity.Companion///PointingToDeclaration/app/com.example.proyectois/-main-activity/-companion/index.md
+$dokka.location:com.example.proyectois/MainActivity.Companion/EXTRA_NAME/#/PointingToDeclaration/app/com.example.proyectois/-main-activity/-companion/-e-x-t-r-a_-n-a-m-e.md
+$dokka.location:com.example.proyectois/MainActivity.Companion/RC_SIGN_IN/#/PointingToDeclaration/app/com.example.proyectois/-main-activity/-companion/-r-c_-s-i-g-n_-i-n.md
+$dokka.location:com.example.proyectois/MainActivity///PointingToDeclaration/app/com.example.proyectois/-main-activity/index.md
+$dokka.location:com.example.proyectois/MainActivity/MainActivity/#/PointingToDeclaration/app/com.example.proyectois/-main-activity/-main-activity.md
+$dokka.location:com.example.proyectois/MainActivity/SignIn/#kotlin.String#kotlin.String/PointingToDeclaration/app/com.example.proyectois/-main-activity/-sign-in.md
+$dokka.location:com.example.proyectois/MainActivity/error/#/PointingToDeclaration/app/com.example.proyectois/-main-activity/error.md
+$dokka.location:com.example.proyectois/MainActivity/firebaseAuthWithGoogle/#kotlin.String/PointingToDeclaration/app/com.example.proyectois/-main-activity/firebase-auth-with-google.md
+$dokka.location:com.example.proyectois/MainActivity/reaload/#/PointingToDeclaration/app/com.example.proyectois/-main-activity/reaload.md
+$dokka.location:com.example.proyectois/MainActivity/signInGoogle/#/PointingToDeclaration/app/com.example.proyectois/-main-activity/sign-in-google.md
+$dokka.location:com.example.proyectois/MainActivity/success/#/PointingToDeclaration/app/com.example.proyectois/-main-activity/success.md
+$dokka.location:com.example.proyectois/MainActivity/updateUI/#com.google.firebase.auth.FirebaseUser?/PointingToDeclaration/app/com.example.proyectois/-main-activity/update-u-i.md
+$dokka.location:com.example.proyectois/MainActivity2///PointingToDeclaration/app/com.example.proyectois/-main-activity2/index.md
+$dokka.location:com.example.proyectois/MainActivity2/MainActivity2/#/PointingToDeclaration/app/com.example.proyectois/-main-activity2/-main-activity2.md
+$dokka.location:com.example.proyectois/MainActivity2/RC_SIGN_IN/#/PointingToDeclaration/app/com.example.proyectois/-main-activity2/-r-c_-s-i-g-n_-i-n.md
+$dokka.location:com.example.proyectois/MainActivity2/confirmPassword/#/PointingToDeclaration/app/com.example.proyectois/-main-activity2/confirm-password.md
+$dokka.location:com.example.proyectois/MainActivity2/createAccount/#kotlin.String#kotlin.String/PointingToDeclaration/app/com.example.proyectois/-main-activity2/create-account.md
+$dokka.location:com.example.proyectois/MainActivity2/error/#/PointingToDeclaration/app/com.example.proyectois/-main-activity2/error.md
+$dokka.location:com.example.proyectois/MainActivity2/handleSignInResult/#com.google.android.gms.tasks.Task[com.google.android.gms.auth.api.signin.GoogleSignInAccount]/PointingToDeclaration/app/com.example.proyectois/-main-activity2/handle-sign-in-result.md
+$dokka.location:com.example.proyectois/MainActivity2/mGoogleSignInClient/#/PointingToDeclaration/app/com.example.proyectois/-main-activity2/m-google-sign-in-client.md
+$dokka.location:com.example.proyectois/MainActivity2/reaload/#/PointingToDeclaration/app/com.example.proyectois/-main-activity2/reaload.md
+$dokka.location:com.example.proyectois/MainActivity2/success/#/PointingToDeclaration/app/com.example.proyectois/-main-activity2/success.md
+$dokka.location:com.example.proyectois/MainActivity2/updateUI/#com.google.android.gms.auth.api.signin.GoogleSignInAccount?/PointingToDeclaration/app/com.example.proyectois/-main-activity2/update-u-i.md
+$dokka.location:com.example.proyectois/MainActivity2/validate/#/PointingToDeclaration/app/com.example.proyectois/-main-activity2/validate.md
+$dokka.location:com.example.proyectois/MainActivity2/validateEmail/#/PointingToDeclaration/app/com.example.proyectois/-main-activity2/validate-email.md
+$dokka.location:com.example.proyectois/MainActivity2/validateName/#/PointingToDeclaration/app/com.example.proyectois/-main-activity2/validate-name.md
+$dokka.location:com.example.proyectois/MainActivity2/validatePassword/#/PointingToDeclaration/app/com.example.proyectois/-main-activity2/validate-password.md
+$dokka.location:com.example.proyectois/MainActivity3///PointingToDeclaration/app/com.example.proyectois/-main-activity3/index.md
+$dokka.location:com.example.proyectois/MainActivity3/MainActivity3/#/PointingToDeclaration/app/com.example.proyectois/-main-activity3/-main-activity3.md
+$dokka.location:com.example.proyectois/MainActivity3/logOut/#/PointingToDeclaration/app/com.example.proyectois/-main-activity3/log-out.md
+$dokka.location:com.example.proyectois/Preguntas///PointingToDeclaration/app/com.example.proyectois/-preguntas/index.md
+$dokka.location:com.example.proyectois/Preguntas/Preguntas/#/PointingToDeclaration/app/com.example.proyectois/-preguntas/-preguntas.md
+$dokka.location:com.example.proyectois/PrimerosPasos///PointingToDeclaration/app/com.example.proyectois/-primeros-pasos/index.md
+$dokka.location:com.example.proyectois/PrimerosPasos/PrimerosPasos/#/PointingToDeclaration/app/com.example.proyectois/-primeros-pasos/-primeros-pasos.md
+$dokka.location:com.example.proyectois/SplashActivity///PointingToDeclaration/app/com.example.proyectois/-splash-activity/index.md
+$dokka.location:com.example.proyectois/SplashActivity/SplashActivity/#/PointingToDeclaration/app/com.example.proyectois/-splash-activity/-splash-activity.md
+com.example.proyectois
+
