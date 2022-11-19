@@ -178,7 +178,7 @@ class MainActivity2 : AppCompatActivity() {
     /**
      * Función para validar todos los campos.
      */
-    fun validate(){
+     fun validate(){
         val result = arrayOf(validateEmail(), validatePassword(), validateName(), confirmPassword())
         if (false in result){
             return
