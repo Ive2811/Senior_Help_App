@@ -23,6 +23,7 @@
                 android:background="#FFFFFF"
                 android:layout_marginLeft="150dp"
                 android:scaleType="fitCenter"
+                android:contentDescription="botón para volver a pantalla principal"
                 app:srcCompat="@drawable/casa_silueta_negra_sin_puerta" />
 
             <TextView
@@ -31,6 +32,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/alata"
                 android:text="Consejos y ayuda "
+                android:contentDescription="Consejos y ayuda"
                 android:textAlignment="center"
                 android:textColor="#9C6C4B"
                 android:textSize="34sp" />
@@ -49,6 +51,7 @@
                     android:layout_height="130dp"
                     android:background="@drawable/buttons"
                     android:scaleType="fitStart"
+                    android:contentDescription="botón con imagen de un teléfono móvil en la mano"
                     app:srcCompat="@drawable/smartphone"/>
 
                 <TextView
@@ -58,6 +61,7 @@
                     android:fontFamily="@font/alata"
                     android:gravity="center"
                     android:text="Puede subir el brillo si se le dificulta ver los componentes."
+                    android:contentDescription="Puede subir el brillo si se le dificulta ver los componentes"
                     android:textAlignment="center"
                     android:textColor="#3B5463"
                     android:textSize="22sp" />
@@ -65,7 +69,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="200dp"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="40dp"
             android:gravity="center"
@@ -77,19 +81,81 @@
                 android:layout_height="130dp"
                 android:background="@drawable/buttons"
                 android:scaleType="fitStart"
-                app:srcCompat="@drawable/recordatorios"/>
+                android:contentDescription="botón con imagen de batería baja"
+                app:srcCompat="@drawable/bajo_nivel_de_bateria"/>
 
             <TextView
                 android:id="@+id/txt_ayu_consejo2"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="200dp"
                 android:fontFamily="@font/alata"
                 android:gravity="center"
-                android:text="Agregue recordatorios de sus actividades diarias para tener un mejor control de ellas."
+                android:text="Ponga a cargar su teléfono cuando le quede un 15% de carga a la batería, no espere a que se descargue más."
+                android:contentDescription="Ponga a cargar su teléfono cuando le quede un 15% de carga a la batería, no espere a que se descargue más"
                 android:textAlignment="center"
                 android:textColor="#3B5463"
                 android:textSize="22sp" />
         </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgbtn_ayu_consejo3"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/buttons"
+                    android:scaleType="fitStart"
+                    android:contentDescription="botón con imagen de un teléfono móvil"
+                    app:srcCompat="@drawable/iphone"/>
+
+                <TextView
+                    android:id="@+id/txt_ayu_consejo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:fontFamily="@font/alata"
+                    android:gravity="center"
+                    android:text="Escoja un lugar seguro para poner y guardar su teléfono cuando no lo esté usando."
+                    android:contentDescription="Escoja un lugar seguro para poner y guardar su teléfono cuando no lo esté usando"
+                    android:textAlignment="center"
+                    android:textColor="#3B5463"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgbtn_ayu_consejo4"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/buttons"
+                    android:scaleType="fitStart"
+                    android:contentDescription="botón con imagen de una llamada en un teléfono móvil "
+                    app:srcCompat="@drawable/telefono_inteligente"/>
+
+                <TextView
+                    android:id="@+id/txt_ayu_consejo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:fontFamily="@font/alata"
+                    android:gravity="center"
+                    android:text="Tenga cuidado cuando dé su número de teléfono."
+                    android:textAlignment="center"
+                    android:textColor="#3B5463"
+                    android:contentDescription="Tenga cuidado cuando dé su número de teléfono"
+                    android:textSize="22sp" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -101,20 +167,21 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imgbtn_ayu_consejo3"
+                    android:id="@+id/imgbtn_ayu_consejo5"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
                     android:background="@drawable/buttons"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/chat"/>
+                    android:contentDescription="botón con imagen de una advertencia en un teléfono móvil "
+                    app:srcCompat="@drawable/caliente"/>
 
                 <TextView
-                    android:id="@+id/txt_ayu_consejo3"
+                    android:id="@+id/txt_ayu_consejo5"
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:fontFamily="@font/alata"
                     android:gravity="center"
-                    android:text="Practique el uso del dispositivo móvil para ir acostumbrándose a el."
+                    android:text="No lo exponga a temperaturas extremas."
                     android:textAlignment="center"
                     android:textColor="#3B5463"
                     android:textSize="22sp" />

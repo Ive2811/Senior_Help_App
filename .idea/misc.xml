@@ -3,14 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_main3.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App/app/src/main/res/layout/activity_apartados.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App/app/src/main/res/layout/activity_ayuda.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App/app/src/main/res/layout/activity_capacitacion.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App/app/src/main/res/layout/activity_main2.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App/app/src/main/res/layout/activity_main3.xml" value="0.25" />
-        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App/app/src/main/res/layout/activity_preguntas.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/Downloads/Senior Help App/app/src/main/res/layout/activity_apartados.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior Help App/app/src/main/res/layout/activity_primeros_pasos.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_agregar_contactos.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_apartados.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_ayuda.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_capacitacion.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_crear_cuenta_de_whats_app.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_cuenta_gmail.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_main.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_main2.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_main3.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_preguntas.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_primeros_pasos.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_reset_password.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/usuario/Downloads/Senior_Help_App-master/Senior_Help_App-master/app/src/main/res/layout/activity_uso_basico.xml" value="0.21693840579710144" />
       </map>
     </option>
   </component>

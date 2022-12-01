@@ -26,5 +26,23 @@ class Apartados : AppCompatActivity() {
         binding.imgbtnAaHome.setOnClickListener {
             startActivity(Intent(this, CapacitacionActivity::class.java))
         }
+        /**
+         * Al dar click, mostramos la pantalla de Agregar Contactos.
+         */
+
+        binding.imgbtnAaRespuesta0.setOnClickListener {
+            startActivity(Intent(this,Uso_Basico::class.java))
+        }
+        binding.imgbtnAaRespuesta1.setOnClickListener {
+            startActivity(Intent(this,Agregar_Contactos::class.java))
+        }
+
+        binding.imgbtnRespuesta2.setOnClickListener {
+            startActivity(Intent(this,Crear_Cuenta_de_WhatsApp::class.java))
+        }
+
+        binding.imgbtnRespuesta3.setOnClickListener {
+            startActivity(Intent(this, Cuenta_Gmail::class.java))
+        }
     }
 }

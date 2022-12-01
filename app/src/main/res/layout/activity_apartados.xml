@@ -23,6 +23,7 @@
                 android:background="#FFFFFF"
                 android:layout_marginLeft="150dp"
                 android:scaleType="fitCenter"
+                android:contentDescription="botón para volver a pantalla principal"
                 app:srcCompat="@drawable/casa_silueta_negra_sin_puerta" />
 
             <TextView
@@ -30,65 +31,134 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/alata"
-                android:text="Uso de apartados "
+                android:text="Uso de Apartados para Telefono Móvil "
+                android:contentDescription="Uso de apartados para teléfno móvil."
                 android:textAlignment="center"
                 android:textColor="#9C6C4B"
-                android:textSize="34sp" />
+                android:textSize="27sp" />
 
-        <LinearLayout
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgbtn_aa_respuesta0"
+                    android:layout_width="120dp"
+                    android:layout_height="125dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/buttons"
+                    android:scaleType="fitStart"
+                    android:contentDescription="botón con imagen de un teléfono"
+                    app:srcCompat="@drawable/cel" />
+
+                <TextView
+                    android:id="@+id/txt_aa_apartado0"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/alata"
+                    android:paddingLeft="50dp"
+                    android:text="Uso Básico del Celular"
+                    android:textColor="#3B5463"
+                    android:contentDescription="Uso básico del celular"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:layout_marginHorizontal="10dp"
             android:gravity="center"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/imgbtn_aa_respuesta1"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_marginRight="20dp"
+                android:layout_width="120dp"
+                android:layout_height="125dp"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/buttons"
                 android:scaleType="fitStart"
-                app:srcCompat="@drawable/llamar" />
+                android:contentDescription="botón con imagen de agregar contactos"
+                app:srcCompat="@drawable/contact" />
 
-            <TextView
-                android:id="@+id/txt_aa_apartado1"
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:fontFamily="@font/alata"
-                android:text="Apartado de llamadas. Presione sobre el botón para ver el videotutorial."
-                android:textColor="#3B5463"
-                android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/txt_aa_apartado1"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:contentDescription="Cómo agregar contactos"
+                    android:fontFamily="@font/alata"
+                    android:paddingLeft="50dp"
+                    android:text="Cómo Agregar Contactos"
+                    android:textColor="#3B5463"
+                    android:textSize="22sp" />
         </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="120dp"
             android:layout_marginHorizontal="10dp"
             android:gravity="center"
-            android:layout_marginTop="60dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imgbtn_aa_respuesta2"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_marginRight="20dp"
+                android:id="@+id/imgbtn_respuesta2"
+                android:layout_width="120dp"
+                android:layout_height="125dp"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/buttons"
                 android:scaleType="fitStart"
-                app:srcCompat="@drawable/ayuda" />
+                android:contentDescription="botón con icono de WhatsApp"
+                app:srcCompat="@drawable/what" />
 
             <TextView
                 android:id="@+id/txt_aa_apartado2"
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
+                android:layout_height="64dp"
                 android:fontFamily="@font/alata"
-                android:text="Presione sobre el botón para ver el videotutorial."
+                android:text=" Crear Cuenta  en WhatsApp"
+                android:contentDescription="Crear cuenta en WhatsApp"
                 android:textColor="#3B5463"
+                android:paddingLeft="50dp"
                 android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgbtn_respuesta3"
+                    android:layout_width="120dp"
+                    android:layout_height="125dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/buttons"
+                    android:scaleType="fitStart"
+                    android:contentDescription="botón con ícono de Gmail"
+                    app:srcCompat="@drawable/gmail" />
+
+                <TextView
+                    android:id="@+id/txt_aa_apartado3"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:fontFamily="@font/alata"
+                    android:text=" Crear Cuenta en Gmail"
+                    android:textColor="#3B5463"
+                    android:paddingLeft="50dp"
+                    android:contentDescription="Crear cuenta en Gmail"
+                    android:textSize="22sp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

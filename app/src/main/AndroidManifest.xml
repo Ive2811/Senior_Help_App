@@ -11,6 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoIS">
         <activity
+            android:name=".Cuenta_Gmail"
+            android:exported="false" />
+        <activity
+            android:name=".Uso_Basico"
+            android:exported="false" />
+        <activity
+            android:name=".Crear_Cuenta_de_WhatsApp"
+            android:exported="false" />
+        <activity
+            android:name=".Agregar_Contactos"
+            android:exported="false" />
+        <activity
             android:name=".ContactoForm"
             android:exported="false" />
         <activity

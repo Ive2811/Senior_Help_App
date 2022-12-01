@@ -24,6 +24,7 @@
         android:layout_marginLeft="150dp"
         android:layout_marginVertical="0dp"
         android:scaleType="fitCenter"
+        android:contentDescription="botón para volver a pantalla principal"
         app:srcCompat="@drawable/casa_silueta_negra_sin_puerta"/>
 
     <TextView
@@ -32,6 +33,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
         android:text="Primeros pasos "
+        android:contentDescription="Primeros pasos"
         android:textAlignment="center"
         android:textColor="#9C6C4B"
         android:textSize="34sp" />
