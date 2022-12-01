@@ -170,7 +170,6 @@
                     android:layout_height="92dp"
                     android:fontFamily="@font/alata"
                     android:text="Preguntas Frecuentes"
-                    android:gravity="center"
                     android:contentDescription="preguntas frecuentes"
                     android:textAlignment="center"
                     android:textColor="#3B5463"
