@@ -14,8 +14,8 @@ _Para usar este proyecto, puedes seguir los siguientes pasos:_
 
 _Para usar la aplicación, son necesarios los siguientes elementos:_
 
-    * Teléfono celular Android con Sistema Operativo 4.1 o superior.
-    * Espacio de almacenamiento libre de 40MB.
+    * Teléfono celular Android con Sistema Operativo 4.4 o superior.
+    * Espacio de almacenamiento libre mínimo de 70 MB.
     * Conexión a Internet (para iniciar sesión mediante Google).
 
 
@@ -24,27 +24,11 @@ _Para usar la aplicación, son necesarios los siguientes elementos:_
 
 _Para instalar la aplicación, debemos seguir los siguientes pasos:_
 
-    * Descargar el archivo APK del siguiente enlace: 
+    * Descargar el archivo APK del siguiente enlace: bit.ly/3gxWnCV 
     * Ir a la carpeta de archivos del teléfono y buscar en descargas.
     * Conceder permiso para instalar la aplicación.
     * Aceptar la instalación.
     Y ¡Comenzar a utilizarla!
-
-
-## Ejecutando las pruebas ⚙️
-
-_ _
-
-### Analice las pruebas end-to-end 🔩
-
-_ _
-
-
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_ _
-
 
 
 ## Construido con 🛠️
@@ -57,7 +41,7 @@ _Las herramientas utilizadas en este proyecto son:_
 
 ## Versionado 📌
 
-Usamos [GitHub](https://github.com/) para el versionado. Para todas las versiones disponibles, mira los [commits en este repositorio](https://github.com/Ive2811/Senior_Help_App/commits/master).
+Usamos [GitHub](https://github.com/) para el versionado. Para ver todas las versiones disponibles, mira los [commits en este repositorio](https://github.com/Ive2811/Senior_Help_App/commits/master).
 
 
 ## Autores ✒️
@@ -68,15 +52,9 @@ Usamos [GitHub](https://github.com/) para el versionado. Para todas las versione
 * **Ana Iveth García Ulloa.** - *Programación* - [Ive2811](https://github.com/Ive2811)
 
 
-## Licencia 📄
-
-Este proyecto está bajo la Licencia ( Licencia) - mira el archivo [LICENSE.md]( ) para detalles
-
-
 ## Expresiones de Gratitud 🎁
  
-* ¡Gracias! 🤓
-
+* El equipo de desarrolladores de Senior Help App agradece el uso de nuestra aplicación. 🤓
 
 
 ---
