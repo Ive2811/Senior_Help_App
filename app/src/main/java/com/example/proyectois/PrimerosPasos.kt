@@ -50,7 +50,7 @@ class PrimerosPasos : AppCompatActivity() {
          * Al dar click, mostramos la Pantalla principal.
          */
         binding.imgbtnPrpHome.setOnClickListener {
-            startActivity(Intent(this, MainActivity3::class.java))
+            startActivity(Intent(this, Pagina_principal::class.java))
         }
     }
 

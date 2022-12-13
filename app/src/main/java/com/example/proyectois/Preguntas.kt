@@ -50,7 +50,7 @@ class Preguntas : AppCompatActivity() {
          * Al dar click, mostramos la pantalla principal.
          */
         binding.imgbtnPreHome.setOnClickListener {
-            startActivity(Intent(this, MainActivity3::class.java))
+            startActivity(Intent(this, Pagina_principal::class.java))
         }
     }
 }

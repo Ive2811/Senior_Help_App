@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/alata"
-                android:text="¿Cómo Encender y Apagar el Celular? "
+                android:text="¿Cómo encender y apagar el celular? "
                 android:contentDescription="¿Cómo encender y apagar el celular?"
                 android:textAlignment="center"
                 android:textColor="#9C6C4B"

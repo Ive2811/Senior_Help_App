@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.VideoView
 import android.media.MediaPlayer
 import android.net.Uri
-import com.example.proyectois.databinding.ActivityAgregarContactosBinding
 import com.example.proyectois.databinding.ActivityCuentaGmailBinding
 
 
@@ -53,7 +52,7 @@ class Cuenta_Gmail : AppCompatActivity() {
          * Al dar click, mostramos la Pantalla principal.
          */
         binding.imgbtnPrpHome.setOnClickListener {
-            startActivity(Intent(this, MainActivity3::class.java))
+            startActivity(Intent(this, Pagina_principal::class.java))
         }
     }
 

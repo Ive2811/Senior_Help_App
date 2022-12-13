@@ -26,7 +26,7 @@ class ActivityResetPassword : AppCompatActivity() {
          * Al dar click, mostramos la Pantalla principal.
          */
         binding.btnRpBack.setOnClickListener{
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this,Inicio_Sesion::class.java))
             finish()
         }
         /**

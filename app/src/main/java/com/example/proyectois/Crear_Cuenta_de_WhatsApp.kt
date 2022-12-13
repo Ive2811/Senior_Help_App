@@ -52,7 +52,7 @@ class Crear_Cuenta_de_WhatsApp : AppCompatActivity() {
          * Al dar click, mostramos la Pantalla principal.
          */
         binding.imgbtnPrpHome.setOnClickListener {
-            startActivity(Intent(this, MainActivity3::class.java))
+            startActivity(Intent(this, Pagina_principal::class.java))
         }
     }
 
@@ -81,6 +81,4 @@ class Crear_Cuenta_de_WhatsApp : AppCompatActivity() {
         super.onDestroy()
         mMediaplayer.release()
     }
-
-
 }

@@ -44,17 +44,17 @@ class CapacitacionActivity : AppCompatActivity() {
         }
 
         /**
-         * Al dar click, mostramos la pantalla de Preguntas.
+         * Al dar click, mostramos la pantalla de Uso de apartados en computadora.
          */
-        binding.imgbtnpreguntasF.setOnClickListener {
-            startActivity(Intent(this,Preguntas::class.java))
+        binding.imgbtnApartadosCom.setOnClickListener {
+            startActivity(Intent(this,Activity_ApartadosComputadora::class.java))
         }
 
         /**
          * Al dar click, mostramos la pantalla de Pantalla principal.
          */
         binding.imgbtnCapHome.setOnClickListener {
-            startActivity(Intent(this, MainActivity3::class.java))
+            startActivity(Intent(this, Pagina_principal::class.java))
         }
 
         /**

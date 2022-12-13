@@ -26,9 +26,6 @@ class Apartados : AppCompatActivity() {
         binding.imgbtnAaHome.setOnClickListener {
             startActivity(Intent(this, CapacitacionActivity::class.java))
         }
-        /**
-         * Al dar click, mostramos la pantalla de Agregar Contactos.
-         */
 
         binding.imgbtnAaRespuesta0.setOnClickListener {
             startActivity(Intent(this,Uso_Basico::class.java))

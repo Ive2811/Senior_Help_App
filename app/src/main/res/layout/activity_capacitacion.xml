@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -98,7 +98,6 @@
                     android:contentDescription="primeros pasos"
                     android:textAlignment="center"
                     android:textColor="#3B5463"
-                    android:textColorHint="#3B5463"
                     android:textSize="22sp" />
 
                 <TextView
@@ -111,7 +110,6 @@
                     android:contentDescription="consejos y ayuda"
                     android:textAlignment="center"
                     android:textColor="#3B5463"
-                    android:textColorHint="#3B5463"
                     android:textSize="22sp" />
             </LinearLayout>
 
@@ -120,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -134,14 +132,14 @@
                     app:srcCompat="@drawable/apartados" />
 
                 <ImageButton
-                    android:id="@+id/imgbtnpreguntasF"
+                    android:id="@+id/imgbtn_apartadosCom"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="20dp"
                     android:background="@drawable/buttons"
                     android:scaleType="fitCenter"
-                    android:contentDescription="botón para ingresar a pantalla de preguntas frecuentes"
-                    app:srcCompat="@drawable/preguntas" />
+                    android:contentDescription="botón para ingresar a pantalla de uso de apartados de computadora"
+                    app:srcCompat="@drawable/com" />
 
             </LinearLayout>
 
@@ -154,66 +152,26 @@
 
                 <TextView
                     android:id="@+id/txt_cap_apartados"
-                    android:layout_width="148dp"
-                    android:layout_height="92dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="uso de apartados móvil"
                     android:fontFamily="@font/alata"
                     android:text="Uso de Apartados Móvil"
-                    android:contentDescription="uso de apartados móvil"
                     android:textAlignment="center"
                     android:textColor="#3B5463"
                     android:textSize="22sp" />
 
                 <TextView
-                    android:id="@+id/txt_cap_preguntas"
-                    android:layout_width="148dp"
-                    android:layout_height="92dp"
+                    android:id="@+id/txt_apartadosCom"
+                    android:layout_width="183dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Uso de apartados computadora"
                     android:fontFamily="@font/alata"
-                    android:text="Preguntas Frecuentes"
-                    android:contentDescription="preguntas frecuentes"
+                    android:text="Uso de Apartados Computadora"
                     android:textAlignment="center"
                     android:textColor="#3B5463"
                     android:textSize="22sp" />
             </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:gravity="center"
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/imgbtn_apartadosCom"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/buttons"
-                android:scaleType="fitCenter"
-                android:contentDescription="botón para ingresar a pantalla de uso de apartados de computadora"
-                app:srcCompat="@drawable/com" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="50dp"
-            android:gravity="center"
-            android:layout_marginBottom="60dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/txt_apartadosCom"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/alata"
-                android:text="Uso de Apartados Computadora"
-                android:contentDescription="Uso de apartados computadora"
-                android:textAlignment="center"
-                android:textColor="#3B5463"
-                android:textSize="22sp" />
-        </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </layout>
